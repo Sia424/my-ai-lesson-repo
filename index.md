@@ -3,7 +3,7 @@ title: 从零开始，与 AI Agent 一起做事
 permalink: /
 home: true
 ---
-<p class="eyebrow">SOURCE / 面向非技术人员的入门教程</p>
+<p class="eyebrow">Sia / 面向非技术人员的入门教程</p>
 
 # 从零开始，<br>与 AI Agent 一起做事。
 
@@ -32,6 +32,6 @@ home: true
 
 ## 关于这份教程
 
-由 source 编写，面向希望把 AI 用于日常工作和学习的读者。教程采用 CC BY-NC 4.0 许可，商业使用须事先获得作者书面授权。
+由 Sia 编写，面向希望把 AI 用于日常工作和学习的读者。教程采用 CC BY-NC 4.0 许可，商业使用须事先获得作者书面授权。
 
 [查看完整使用许可](license.md) · [查看章节目录](docs/README.md)
