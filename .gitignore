@@ -1,0 +1,34 @@
+# Task temporary files
+.tmp/
+
+# Dependencies and generated files
+node_modules/
+.venv/
+__pycache__/
+*.py[cod]
+dist/
+build/
+.cache/
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
+vendor/bundle/
+
+# Private environment configuration
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# OS and editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Local AI configuration
+.codex/
+.claude/
+.agents/

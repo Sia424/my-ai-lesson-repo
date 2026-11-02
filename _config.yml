@@ -1,0 +1,35 @@
+title: AI Agent 入门指南
+description: 面向非技术人员，从基础概念和安全常识开始，逐步学会与 AI Agent 协作。
+lang: zh-CN
+url: https://sia424.github.io
+baseurl: /my-ai-lesson-repo
+repository: Sia424/my-ai-lesson-repo
+markdown: kramdown
+kramdown:
+  input: GFM
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+exclude:
+  - README.md
+  - AGENTS.md
+  - CLAUDE.md
+  - ROADMAP.md
+  - PUBLISH_PLAN.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - scripts
+  - guides
+  - examples
+  - assets/README.md
+  - docs/03.完成你的第一个任务.md
+  - .tmp
+  - vendor
+  - node_modules
