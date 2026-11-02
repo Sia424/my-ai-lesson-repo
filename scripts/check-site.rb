@@ -13,6 +13,7 @@ link_count = 0
 Dir.glob("**/*.md").reject { |p| p.start_with?("_site/", "vendor/", "node_modules/") }.each do |file|
   body = File.read(file)
   if body.start_with?("---\n")
+    errors << "Published Markdown filenames must not contain spaces: #{file}" if file.include?(" ")
     front = body.split(/^---\s*$\n?/, 3)[1]
     data = YAML.safe_load(front)
     path = data && data["permalink"]
@@ -54,7 +55,10 @@ if ARGV.include?("--built")
   errors << "No Jekyll build found" unless File.directory?("_site")
   expected_files = expected_urls.map { |p| "#{p.sub(%r{^/}, '')}index.html" } + ["assets/site/style.css"]
   actual_files = Dir.glob("_site/**/*").select { |p| File.file?(p) }.map { |p| p.sub("_site/", "") }
-  errors << "Unexpected or missing build files: #{(actual_files - expected_files) + (expected_files - actual_files)}" unless actual_files.sort == expected_files.sort
+  # GitHub's native builder can add its default theme stylesheet.
+  allowed_files = expected_files + ["assets/css/style.css"]
+  file_errors = (actual_files - allowed_files) + (expected_files - actual_files)
+  errors << "Unexpected or missing build files: #{file_errors}" unless file_errors.empty?
   actual_files.grep(/\.html$/).each do |file|
     html = File.read("_site/#{file}")
     errors << "Unrendered Liquid: #{file}" if html.match?(/\{[{%]/)

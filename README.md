@@ -6,7 +6,9 @@
 
 ## 阅读入口
 
-目前可阅读[第一章“认识 AI Agent”](docs/01.认识%20AI%20Agent.md)和[第二章“使用 Agent 前，先知道这些安全常识”](docs/02.使用%20Agent%20前，先知道这些安全常识.md)，涵盖基础概念、公众号写作练习、个人助手安全边界与工具保护机制。后续章节持续更新中。
+[打开教程网站](https://sia424.github.io/my-ai-lesson-repo/)
+
+目前可阅读[第一章“认识 AI Agent”](docs/01.认识-AI-Agent.md)和[第二章“使用 Agent 前，先知道这些安全常识”](docs/02.使用-Agent-前，先知道这些安全常识.md)，涵盖基础概念、公众号写作练习、个人助手安全边界与工具保护机制。后续章节持续更新中。
 
 - [正文目录](docs/README.md)
 - [工具指南说明](guides/README.md)
@@ -37,7 +39,7 @@ bundle exec jekyll build
 ruby scripts/check-site.rb --built
 ```
 
-仓库与 Pages 的执行进度见[发布施工清单](PUBLISH_PLAN.md)，未部署前不将预计地址作为已上线入口。
+站点由 `main` 根目录自动构建。更新文档、运行检查并提交后，推送 `main` 即触发 Pages 更新；发布结果在仓库 Actions 中查看。维护文档与教程之外的文件不会进入网站，公开仓库中仍然可见。发布验证记录见[施工清单](PUBLISH_PLAN.md)。
 
 ## 使用许可
 
