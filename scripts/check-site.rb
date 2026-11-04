@@ -45,6 +45,9 @@ layout = File.read("_layouts/default.html")
 %w[<html <head> <main <nav <footer].each do |tag|
   errors << "Missing layout structure: #{tag}" unless layout.include?(tag)
 end
+expected_urls.each do |url|
+  errors << "Missing sidebar link: #{url}" unless layout.include?("'#{url}'")
+end
 errors << "Missing mobile viewport" unless layout.include?('name="viewport"')
 errors << "Missing responsive styles" unless File.read("assets/site/style.css").include?("@media(max-width:")
 
