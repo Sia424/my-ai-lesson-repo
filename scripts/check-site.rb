@@ -32,7 +32,7 @@ Dir.glob("**/*.md").reject { |p| p.start_with?("_site/", "vendor/", "node_module
   end
 end
 
-expected_urls = %w[/ /chapters/ /introduction/ /safety/ /github-setup/ /license/]
+expected_urls = %w[/ /chapters/ /introduction/ /safety/ /github-setup/ /agent-rules/ /license/]
 errors << "Unexpected public pages" unless pages.values.sort == expected_urls.sort
 errors << "Unexpected project URL" unless config["baseurl"] == "/my-ai-lesson-repo"
 errors << "Wrong repository" unless config["repository"] == "Sia424/my-ai-lesson-repo"

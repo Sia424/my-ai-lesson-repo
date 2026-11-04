@@ -25,9 +25,14 @@ home: true
     <h2>让 WorkBuddy 手把手教你注册 GitHub 账号 <span aria-hidden="true">↗</span></h2>
     <p>认识 GitHub 与 WorkBuddy，弄清 SSH 登录的好处，和 Agent 分工合作完成账号注册与连接配置。</p>
   </a>
+  <a class="chapter-card" href="{{ '/agent-rules/' | relative_url }}">
+    <span class="number">CHAPTER 04</span>
+    <h2>给 Agent 立规矩：长期规则文档（AGENTS.md）怎么写 <span aria-hidden="true">↗</span></h2>
+    <p>立好规矩不烧心：对比 8 款主流工具的规则文档配置方式，附办公白领可直接套用的最佳实践模板。</p>
+  </a>
 </div>
 
-<p class="update-note">目前已完成前三章。需求描述、协作方法与长期规则等后续内容持续更新中。</p>
+<p class="update-note">目前已完成前四章。需求描述、协作方法与长期规则等后续内容持续更新中。</p>
 
 ## 怎样阅读
 
