@@ -8,7 +8,7 @@
 
 [打开教程网站](https://sia424.github.io/my-ai-lesson-repo/)
 
-目前可阅读[第一章“认识 AI Agent”](docs/01.认识-AI-Agent.md)和[第二章“使用 Agent 前，先知道这些安全常识”](docs/02.使用-Agent-前，先知道这些安全常识.md)，涵盖基础概念、公众号写作练习、个人助手安全边界与工具保护机制。后续章节持续更新中。
+目前可阅读[第一章“认识 AI Agent”](docs/01.认识-AI-Agent.md)、[第二章“使用 Agent 前，先知道这些安全常识”](docs/02.使用-Agent-前，先知道这些安全常识.md)和[第三章“让 WorkBuddy 手把手教你注册 GitHub 账号”](docs/03.让-WorkBuddy-手把手教你注册-GitHub-账号.md)，涵盖基础概念、公众号写作练习、个人助手安全边界、工具保护机制，以及用 WorkBuddy 完成 GitHub 注册与 SSH 配置的第一次真实任务。后续章节持续更新中。
 
 - [正文目录](docs/README.md)
 - [工具指南说明](guides/README.md)

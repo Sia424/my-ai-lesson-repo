@@ -32,18 +32,15 @@ Dir.glob("**/*.md").reject { |p| p.start_with?("_site/", "vendor/", "node_module
   end
 end
 
-expected_urls = %w[/ /chapters/ /introduction/ /safety/ /license/]
+expected_urls = %w[/ /chapters/ /introduction/ /safety/ /github-setup/ /license/]
 errors << "Unexpected public pages" unless pages.values.sort == expected_urls.sort
 errors << "Unexpected project URL" unless config["baseurl"] == "/my-ai-lesson-repo"
 errors << "Wrong repository" unless config["repository"] == "Sia424/my-ai-lesson-repo"
 errors << "Missing link conversion plugin" unless config.fetch("plugins", []).include?("jekyll-relative-links")
-private_paths = %w[README.md AGENTS.md CLAUDE.md ROADMAP.md PUBLISH_PLAN.md LICENSE Gemfile scripts guides examples assets/README.md docs/03.完成你的第一个任务.md .tmp vendor node_modules]
+private_paths = %w[README.md AGENTS.md CLAUDE.md ROADMAP.md PUBLISH_PLAN.md LICENSE Gemfile scripts guides examples assets/README.md .tmp vendor node_modules]
 private_paths.each do |path|
   errors << "Missing website exclusion: #{path}" unless config.fetch("exclude", []).include?(path)
 end
-placeholder = File.read("docs/03.完成你的第一个任务.md").strip
-errors << "Chapter 3 must only be a placeholder" unless placeholder == "# 03．完成你的第一个任务\n\n持续更新中。"
-
 layout = File.read("_layouts/default.html")
 %w[<html <head> <main <nav <footer].each do |tag|
   errors << "Missing layout structure: #{tag}" unless layout.include?(tag)

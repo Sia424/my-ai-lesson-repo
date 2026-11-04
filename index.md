@@ -20,9 +20,14 @@ home: true
     <h2>使用前，先知道这些安全常识 <span aria-hidden="true">↗</span></h2>
     <p>学会保护资料与账号、判断授权请求，了解工具提供的保护机制，更有把握地让 Agent 做事。</p>
   </a>
+  <a class="chapter-card" href="{{ '/github-setup/' | relative_url }}">
+    <span class="number">CHAPTER 03</span>
+    <h2>让 WorkBuddy 手把手教你注册 GitHub 账号 <span aria-hidden="true">↗</span></h2>
+    <p>认识 GitHub 与 WorkBuddy，弄清 SSH 登录的好处，和 Agent 分工合作完成账号注册与连接配置。</p>
+  </a>
 </div>
 
-<p class="update-note">目前已完成前两章。任务实践、协作方法与长期规则等后续内容持续更新中。</p>
+<p class="update-note">目前已完成前三章。需求描述、协作方法与长期规则等后续内容持续更新中。</p>
 
 ## 怎样阅读
 

@@ -29,7 +29,6 @@ exclude:
   - guides
   - examples
   - assets/README.md
-  - docs/03.完成你的第一个任务.md
   - .tmp
   - vendor
   - node_modules
