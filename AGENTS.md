@@ -38,5 +38,6 @@
 - 仓库内文档使用相对链接，便于改名、下载和公开托管；对话交付使用绝对路径。
 - 视频对应具体文档小节，知识与操作修订优先落到文档。
 - 文档变更后检查内部链接、目录职责、术语、状态及许可一致性；操作指南还需按声明的平台执行验证，未实测范围明示。
+- 新增或发布章节时同步各阅读入口：`docs/README.md` 正文目录、`index.md` 首页卡片、`_layouts/default.html` 侧边栏导航、前一章结尾导航、`ROADMAP.md` 章节表；占位章节转正发布时，同步调整 `_config.yml` 排除项与 `scripts/check-site.rb` 页面预期，发布后线上核对页面与导航。
 - 提交、发布与外部写入按用户明确授权执行。
 - 网站使用 GitHub Pages 原生 Jekyll 分支构建，规划发布源为 `main` 根目录。`ruby scripts/check-site.rb` 检查配置、正文链接、公开范围和基础模板结构；`bundle exec jekyll build` 后运行 `ruby scripts/check-site.rb --built` 检查产物范围与网页链接。静态检查不替代渲染验证。
